@@ -18,10 +18,6 @@ implementation('com.mopub:mopub-sdk:5.0.0@aar') {
 ```
 删除  ```taglibs 'com.google.code.gson:gson:2.7'``` 后，此编译错误消失
 
-### 运行时错误：
-1. 执行 `onAttached()` 或 `onDetached()` 时，报 `java.lang.ClassNotFoundException: Didn't find class "com.applovin.sdk.AppLovinSdk" on path`
-
 ### 广告显示异常
-删除 `onAttached() / onDetached()` 方法后，SDK 崩溃问题消失，但是有显示异常
 1. 使用给出的广告 ID 加载 Banner 与 插屏没有填充，只有 `adFailedToLoad()` 回调，看不出什么原因导致没有填充
 2. 视频有广告展示，但展示出广告后，切换到手机桌面，再点击应用图标进入应用时，广告消失。
