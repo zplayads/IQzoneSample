@@ -34,14 +34,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     // IQZone
-    implementation(name: 'iqps-core-android', ext: 'aar')
-    implementation(name: 'HyprMX-SDK-4.3.1', ext: 'aar')
-    implementation(name: 'ia-sdk-core-release-7.1.6', ext: 'aar')
-    implementation(name: 'ia-video-kit-release-7.1.6', ext: 'aar')
-    implementation(name: 'ia-mraid-kit-release-7.1.6', ext: 'aar')
-    implementation(name: 'ia-native-kit-release-7.1.6', ext: 'aar')
-    implementation(name: 'SOMAAndroid-8.0.1-release', ext: 'aar')
-    implementation(name: 'presage-moat-3.0.22-moat-3.0.13', ext: 'aar')
+    implementation 'com.yumimobi.ads.thirdparty:iqps-core:2.3.2110'
+    implementation 'com.yumimobi.ads.thirdparty:hyprmx:4.3.1'
+    implementation 'com.yumimobi.ads.thirdparty:ia-sdk-core:7.1.6'
+    implementation 'com.yumimobi.ads.thirdparty:ia-video-kit:7.1.6'
+    implementation 'com.yumimobi.ads.thirdparty:ia-mraid-kit:7.1.6'
+    implementation 'com.yumimobi.ads.thirdparty:ia-native-kit:7.1.6'
+    implementation 'com.yumimobi.ads.thirdparty:soma:8.0.1'
+    implementation 'com.yumimobi.ads.thirdparty:presage-moat-3.0.22-moat:3.0.13'
     // IQZone end
 
     // IQZone and yumi common party
