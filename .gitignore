@@ -6,3 +6,8 @@
 /build
 /captures
 .externalNativeBuild
+
+# vscode auto generate
+.project
+.settings
+.classpath
