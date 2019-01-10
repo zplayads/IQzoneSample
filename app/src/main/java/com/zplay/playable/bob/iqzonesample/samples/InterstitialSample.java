@@ -44,7 +44,6 @@ public class InterstitialSample extends BaseActivity {
     protected void onPause() {
         super.onPause();
         Log.d(TAG, "onPause: ");
-        imdInterstitialAdManager.onDetached();
     }
 
     private void initInterstitial() {
@@ -66,6 +65,11 @@ public class InterstitialSample extends BaseActivity {
             public void adDismissed() {
                 //Take any action you require here
                 Log.d(TAG, "adDismissed: ");
+            }
+
+            @Override
+            public void adClicked() {
+                Log.d(TAG, "adClicked: ");
             }
 
             @Override

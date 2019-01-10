@@ -27,19 +27,6 @@ public class BannerSample extends BaseActivity {
     @Override
     public void loadAd(View view) {
         Log.d(TAG, "loadAd: ");
-
-    }
-
-    @Override
-    public void showAd(View view) {
-        Log.d(TAG, "showAd: " + imdBannerAd.isShown());
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        imdBannerAd.onAttached(this);
         final AdEventsListener imdBannerListener = new AdEventsListener() {
 
             @Override
@@ -72,12 +59,28 @@ public class BannerSample extends BaseActivity {
                 Log.d(TAG, "adDismissed: ");
 
             }
+
+            @Override
+            public void adClicked() {
+                Log.d(TAG, "adClicked: ");
+            }
         };
 
         imdBannerAd.loadAd("UkJ1RVVoQmxOQkdub0RaWFFoVjVYNTRHRHVEQlJycWVacEZBQnppbitZdzEwcThY",
                 0, //banner refresh interval in seconds
                 imdBannerListener,
                 new HashMap<String, String>());
+    }
+
+    @Override
+    public void showAd(View view) {
+        Log.d(TAG, "showAd: " + imdBannerAd.isShown());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        imdBannerAd.onAttached(this);
     }
 
     @Override

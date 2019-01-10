@@ -68,6 +68,11 @@ public class VideoSample extends BaseActivity {
             }
 
             @Override
+            public void adClicked() {
+                Log.d(TAG, "rv: adClicked: ");
+            }
+
+            @Override
             public void adFailedToLoad() {
                 //Take any action you require here
                 Log.d(TAG, "rv: adFailedToLoad: ");
