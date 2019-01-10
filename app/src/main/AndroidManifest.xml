@@ -26,6 +26,20 @@
         <activity android:name=".samples.VideoSample" />
         <activity android:name=".samples.InterstitialSample" />
         <activity android:name=".samples.BannerSample" />
+
+        <!-- InMobi 7.2.2 -->
+        <activity
+            android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:resizeableActivity="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar"
+            tools:ignore="UnusedAttribute"/>
+
+        <service
+            android:name="com.inmobi.signals.activityrecognition.ActivityRecognitionManager"
+            android:enabled="true"/>
+        <!-- InMobi 7.2.2 end-->
     </application>
 
 </manifest>

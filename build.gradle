@@ -21,6 +21,8 @@ allprojects {
         jcenter()
         maven {
             url 'https://adsdk.yumimobi.com/Android'
+            // If a connection error occurs, try the following URL
+            // url 'http://ad-sdk.oss-cn-beijing.aliyuncs.com/Android'
         }
     }
 }
